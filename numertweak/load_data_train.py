@@ -4,7 +4,7 @@ import numpy as np
 import gc
 
 
-def load_data_train(path="./", filetype="zip", zipdir=""):
+def load_data_train(path="./", filetype="zip", zipdir="", competitions=None):
     """Load the training set
 
     Parameters:
@@ -46,7 +46,10 @@ def load_data_train(path="./", filetype="zip", zipdir=""):
     X_train = df1[x_cols].values.astype(np.float32)
 
     # to export Y_train = df1[y_cols].values
-    y_cols = list(df1.filter(regex="target_").columns)
+    if competitions:
+        y_cols = ["target_" + str(s) for s in competitions]
+    else:
+        y_cols = list(df1.filter(regex="target_").columns)
     Y_train = df1[y_cols].values.astype(np.uint8)  # don't use "np.bool_"
 
     # extract era IDs

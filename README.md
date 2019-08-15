@@ -27,7 +27,7 @@ In notebooks use this
 
 ```
 %%capture
-!pip install "numertweak>=0.1.0"
+!pip install "numertweak>=0.1.1"
 from numertweak import *
 ```
 
