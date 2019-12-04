@@ -1,3 +1,7 @@
+# 0.2.2 / 2019-12-04
+
+  * another attempt to fix the subfolder import
+
 # 0.2.1 / 2019-12-04
 
   * deps removed
