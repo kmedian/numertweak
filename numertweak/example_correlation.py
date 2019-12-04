@@ -3,6 +3,14 @@ import pandas as pd
 import numpy as np
 from scipy.stats import pearsonr
 import gc
+import warnings
+
+
+warnings.warn(
+    ("function is outdated since tournament 168 "
+     "and will be removed."),
+    DeprecationWarning, stacklevel=2)
+
 
 
 def example_correlation(tnam, Y_proba, path="./", filetype="zip", zipdir=""):

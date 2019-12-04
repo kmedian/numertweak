@@ -2,6 +2,14 @@ from zipfile import ZipFile
 import pandas as pd
 import numpy as np
 import gc
+import warnings
+
+
+warnings.warn(
+    ("function is outdated since tournament 168 "
+     "and will be removed."),
+    DeprecationWarning, stacklevel=2)
+
 
 
 def load_data_train(path="./", filetype="zip", zipdir="", competitions=None):

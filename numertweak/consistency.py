@@ -1,5 +1,12 @@
 import numpy as np
 from sklearn.metrics import log_loss
+import warnings
+
+
+warnings.warn(
+    ("function is outdated since tournament 168 "
+     "and will be removed."),
+    DeprecationWarning, stacklevel=2)
 
 
 def consistency(era_valid, Y_valid, Y_proba):
