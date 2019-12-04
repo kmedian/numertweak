@@ -7,7 +7,7 @@ def read(fname):
 
 
 setup(name='numertweak',
-      version='0.2.0',
+      version='0.2.1',
       description='Some utility function for the numerai competition',
       long_description=read('README.md'),
       long_description_content_type='text/markdown',
@@ -18,10 +18,7 @@ setup(name='numertweak',
       packages=['numertweak'],
       install_requires=[
           'setuptools>=40.0.0',
-          'nose>=1.3.7',
           'numpy>=1.14.5',
-          'scipy>=1.1.0',
-          'pandas>=0.23.4',
-          'scikit-learn>=0.20.0'],
+          'pandas>=0.23.4',],
       python_requires='>=3.6',
       zip_safe=False)

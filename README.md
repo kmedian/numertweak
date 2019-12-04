@@ -39,10 +39,6 @@ from numertweak.since168 import *
 * Upload to PyPi with twine: `python setup.py sdist && twine upload -r pypi dist/*`
 
 
-## Debugging
-* Notebooks to profile python code are in the [profile](profile) folder
-
-
 ## Support
 Please [open an issue](https://github.com/kmedian/numertweak/issues/new) for support.
 
