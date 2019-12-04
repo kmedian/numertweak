@@ -27,13 +27,13 @@ In notebooks use this
 
 ```
 %%capture
-!pip install "numertweak>=0.1.1"
-from numertweak import *
+!pip install "numertweak>=0.2.0"
+from numertweak.since168 import *
 ```
 
 
 ## Commands
-* Check syntax: `flake8 --ignore=F401`
+* Check syntax: `flake8 --ignore=F401,W503,E731`
 * Remove `.pyc` files: `find . -type f -name "*.pyc" | xargs rm`
 * Remove `__pycache__` folders: `find . -type d -name "__pycache__" | xargs rm -rf`
 * Upload to PyPi with twine: `python setup.py sdist && twine upload -r pypi dist/*`
