@@ -1,6 +1,6 @@
-# 0.2.2 / 2019-12-04
+# 0.2.2/3 / 2019-12-04
 
-  * another attempt to fix the subfolder import
+  * subfolders removed
 
 # 0.2.1 / 2019-12-04
 
